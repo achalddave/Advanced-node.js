@@ -1,0 +1,5 @@
+Asynchronous
+============
+file.on('data', function(data) { to.write(data); });
+then to.end() --> won't work
+
