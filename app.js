@@ -1,11 +1,12 @@
 var fs = require('fs'),
-    to = fs.createWriteStream('output.txt'),
-    file = fs.createReadStream('information.txt');
+    file = fs.createWriteStream('guestbook.txt'),
+    BinaryServer = require('binaryjs').BinaryServer,
+    server = new BinaryServer({ port: 9000 });
 
-file.on('data', function(data) {
-  to.write(data);
-});
+server.on('client', function(client) {
 
-file.on('end', function() {
-  to.end();
+  client.on('stream', function(stream) {
+    stream.pipe(file);
+  });
+
 });
