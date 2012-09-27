@@ -5,7 +5,7 @@
 
 <script>
 var stream;
-var client = new BinaryClient('ws://localhost:9000');
+var client = new BinaryClient('ws://10.10.66.130:9000');
 
 client.on('open', function() {
   stream = client.createStream();

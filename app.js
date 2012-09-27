@@ -6,7 +6,8 @@ var fs = require('fs'),
 server.on('connection', function(client) {
 
   client.on('stream', function(stream) {
-    stream.pipe(file);
+    file.write(stream);
+    file.write('\n');
   });
 
 });
