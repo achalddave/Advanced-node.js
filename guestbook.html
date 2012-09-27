@@ -11,13 +11,18 @@ client.on('open', function() {
   stream = client.createStream();
 });
 
+var writeToStream = function() {
+  var data = document.getElementById('msg').value;
+  stream.write(data);
+  document.getElementById('msg').value == 0;
+}
 </script>
 
 </head>
 <body>
 
 <input type="text" id="msg">
-<button id="save">Save</button>
+<button id="save" onclick="writeToStream();">Save</button>
 
 </body>
 <html>
