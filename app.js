@@ -3,7 +3,7 @@ var fs = require('fs'),
     BinaryServer = require('binaryjs').BinaryServer,
     server = new BinaryServer({ port: 9000 });
 
-server.on('client', function(client) {
+server.on('connection', function(client) {
 
   client.on('stream', function(stream) {
     stream.pipe(file);
