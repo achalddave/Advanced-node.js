@@ -12,3 +12,13 @@ Package.json
 It's a way to make sure everyone who uses your stuff has 
 the proper modules.
 
+`npm init`
+    Just use the defaults
+    You get something like package.json in package.jsonStart commit
+    npm install [module] --save
+    npm install -d 
+        installs all the dependencies from package.json! :)
+
+    npm publish
+        publishes your package to npm repo! 
+            all you need is the package.json

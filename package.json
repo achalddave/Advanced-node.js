@@ -5,7 +5,11 @@
   "repository": {
     "url": ""
   },
-  "dependencies": {},
+  "dependencies": {
+    "binaryjs": "~0.1.4",
+    "express": "~3.0.0rc4",
+    "lineate": "~9000.0.3"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
   "engines": {
