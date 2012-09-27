@@ -3,10 +3,13 @@
 <script src="http://cdn.binaryjs.com/0/binary.min.js"></script>
 
 <script>
-var client = new BinaryClient('ws://localhost:9000'),
-    stream = client.createStream();
+var stream;
+var client = new BinaryClient('ws://localhost:9000');
 
-// won't work, client may not be initialized by stream line
+client.on('open', function() {
+  stream = client.createStream();
+});
+
 </script>
 
 </head>
