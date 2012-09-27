@@ -20,5 +20,6 @@ the proper modules.
         installs all the dependencies from package.json! :)
 
     npm publish
-        publishes your package to npm repo! 
-            all you need is the package.json
+        publishes your package to npm repo
+            all you need is the package.json!
+            your friends can all download it/use it
