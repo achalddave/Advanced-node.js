@@ -3,3 +3,12 @@ Asynchronous
 file.on('data', function(data) { to.write(data); });
 then to.end() --> won't work
 
+Guestbook
+=========
+See revisions in git
+
+Package.json
+============
+It's a way to make sure everyone who uses your stuff has 
+the proper modules.
+
